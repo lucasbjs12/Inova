@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --dark:    #080c18;
-            --dark2:   #0d1225;
-            --dark3:   #111830;
-            --steel:   #1a2238;
+            --dark:    #f5f7fb;
+            --dark2:   #e3e9f3;
+            --dark3:   #d7dcee;
+            --steel:   #a0afc8;
             --gold:    #3d80d4;
             --gold2:   #5a9be0;
             --blue:    #3d80d4;
-            --gray-accent: #7a8fa0;
-            --text:    #c9d1d9;
-            --text-dim:#7b8894;
-            --white:   #f0f6fc;
+            --gray-accent: #6f7f94;
+            --text:    #1f2c3d;
+            --text-dim:#4a5b70;
+            --white:   #ffffff;
             --radius:  8px;
-            --shadow:  0 8px 32px rgba(0,0,0,0.5);
+            --shadow:  0 8px 32px rgba(0,0,0,0.1);
         }
 
         * { margin:0; padding:0; box-sizing:border-box; }
@@ -56,7 +56,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:clamp(2rem, 5vw, 3.2rem);
             font-weight:800;
-            color: var(--white);
+            color: var(--text);
             line-height:1.05;
         }
 
@@ -77,12 +77,12 @@
             z-index:1000;
             padding:0;
             transition: background .4s, box-shadow .4s;
-            background: rgba(13,17,23,.0);
+            background: rgba(255,255,255,0);
         }
 
         header.scrolled {
-            background: rgba(13,17,23,.97);
-            box-shadow: 0 1px 0 rgba(232,160,32,.25);
+            background: rgba(255,255,255,.95);
+            box-shadow: 0 1px 0 rgba(61,128,212,.2);
         }
 
         nav {
@@ -153,7 +153,7 @@
 
         .nav-cta {
             background: var(--gold) !important;
-            color: var(--white) !important;
+            color: var(--text) !important;
             font-weight:700 !important;
             border-radius:50px !important;
             padding:.45rem 1.1rem !important;
@@ -165,7 +165,7 @@
         .menu-toggle {
             display:none;
             background:none; border:none;
-            color: var(--white);
+            color: var(--text);
             font-size:1.4rem;
             cursor:pointer;
             padding:.5rem;
@@ -193,7 +193,7 @@
 
         .hero-overlay {
             position:absolute; inset:0;
-            background: linear-gradient(105deg, rgba(13,17,23,.92) 40%, rgba(13,17,23,.55) 100%);
+            background: linear-gradient(105deg, rgba(255,255,255,.85) 20%, rgba(255,255,255,.45) 100%);
         }
 
         .hero-grid-pattern {
@@ -250,7 +250,7 @@
             font-size: clamp(2.8rem, 7vw, 5.5rem);
             font-weight:800;
             line-height:1;
-            color: var(--white);
+            color: var(--text);
             margin-bottom:1.25rem;
         }
 
@@ -288,7 +288,7 @@
             align-items:center;
             gap:.5rem;
             background: var(--gold);
-            color: var(--white);
+            color: var(--text);
             padding:.85rem 1.8rem;
             border-radius:50px;
             font-weight:700;
@@ -304,7 +304,7 @@
             align-items:center;
             gap:.5rem;
             background: transparent;
-            color: var(--white);
+            color: var(--text);
             padding:.85rem 1.8rem;
             border-radius:50px;
             border:1px solid rgba(240,246,252,.25);
@@ -420,7 +420,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:1rem;
             font-weight:700;
-            color: var(--white);
+            color: var(--text);
             margin-bottom:.25rem;
         }
 
@@ -488,7 +488,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:1.2rem;
             font-weight:700;
-            color: var(--white);
+            color: var(--text);
             margin-bottom:.75rem;
         }
 
@@ -541,7 +541,7 @@
 
         .consulting-image-overlay {
             position:absolute; inset:0;
-            background: linear-gradient(to top, rgba(13,17,23,.85) 0%, transparent 60%);
+            background: linear-gradient(to top, rgba(255,255,255,.8) 0%, transparent 60%);
             display:flex; align-items:flex-end;
             padding:1.5rem;
         }
@@ -598,7 +598,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:1.4rem;
             font-weight:700;
-            color: var(--white);
+            color: var(--text);
             margin-bottom:.75rem;
         }
 
@@ -685,7 +685,7 @@
 
         .project-overlay {
             position:absolute; inset:0;
-            background: linear-gradient(to top, rgba(13,17,23,.9) 0%, rgba(13,17,23,.3) 60%, transparent 100%);
+            background: linear-gradient(to top, rgba(255,255,255,.85) 0%, rgba(255,255,255,.35) 60%, transparent 100%);
             display:flex;
             flex-direction:column;
             justify-content:flex-end;
@@ -706,7 +706,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:1.3rem;
             font-weight:700;
-            color: var(--white);
+            color: var(--text);
             margin-bottom:.35rem;
         }
 
@@ -763,7 +763,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:1.1rem;
             font-weight:700;
-            color: var(--white);
+            color: var(--text);
             margin-bottom:1.5rem;
         }
 
@@ -813,7 +813,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:1.5rem;
             font-weight:700;
-            color: var(--white);
+            color: var(--text);
             margin-bottom:1.75rem;
         }
 
@@ -860,7 +860,7 @@
         .submit-btn {
             width:100%;
             background: var(--gold);
-            color: var(--white);
+            color: var(--text);
             border:none;
             padding:1rem;
             border-radius:50px;
@@ -902,7 +902,7 @@
             font-family: 'Barlow Condensed', sans-serif;
             font-size:.9rem;
             font-weight:700;
-            color: var(--white);
+            color: var(--text);
             text-transform:uppercase;
             letter-spacing:.08em;
             margin-bottom:1rem;
@@ -969,7 +969,7 @@
             .nav-links {
                 position:fixed;
                 top:70px; left:0; right:0;
-                background: rgba(13,17,23,.98);
+                background: rgba(255,255,255,.98);
                 flex-direction:column;
                 padding:1.5rem;
                 gap:.5rem;
@@ -1087,7 +1087,7 @@
                 <h2 class="section-title">Tradição e<br><span>inovação</span> em cada obra</h2>
                 <span class="gold-line"></span>
                 <p style="color:var(--text-dim);line-height:1.8;margin-bottom:1rem;font-size:.95rem;">
-                    A <strong style="color:var(--white)">Tittanus Engenharia</strong> é especializada na execução de obras civis, reformas, aplicação de pisos industriais e serviços de pintura técnica.
+                    A <strong style="color: var(--text)">Tittanus Engenharia</strong> é especializada na execução de obras civis, reformas, aplicação de pisos industriais e serviços de pintura técnica.
                 </p>
                 <p style="color:var(--text-dim);line-height:1.8;margin-bottom:2rem;font-size:.95rem;">
                     Atuamos com inteligência técnica, foco em desempenho e acabamento de alto padrão, sempre buscando soluções eficientes e duráveis. Nosso diferencial está na união entre força estrutural e excelência visual, entregando resultados que valorizam o patrimônio.
